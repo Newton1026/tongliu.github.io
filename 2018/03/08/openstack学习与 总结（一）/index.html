@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="技术," />
 
 
 
@@ -81,16 +81,18 @@
 
 
 
-<meta name="description" content="坚持就是最好的策略">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Newton&#39;s">
-<meta property="og:url" content="http://yoursite.com/tags/技术/index.html">
+<meta name="description" content="&amp;ensp;&amp;ensp;&amp;emsp;『纵横江湖三十余载，杀尽仇寇，败尽英雄，天下更无抗手，无可柰何，惟隐居深谷，以雕为友。呜呼，生平求一败而不可得，诚寂寥难堪也。』&amp;ensp;&amp;ensp;&amp;emsp;凌厉刚猛，无坚不摧，弱冠前以之与河朔群雄争锋。紫薇软剑，三十岁前所用，误伤义士不祥，悔恨无已，乃弃之深谷。 重剑无锋，大巧不工。四十岁前恃之横行天下。 四十岁后，不滞于物，草木竹石均可为剑。自此精修，">
+<meta name="keywords" content="技术">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Openstack学习与总结（一）">
+<meta property="og:url" content="http://yoursite.com/2018/03/08/openstack学习与 总结（一）/index.html">
 <meta property="og:site_name" content="Newton&#39;s">
-<meta property="og:description" content="坚持就是最好的策略">
-<meta property="og:locale" content="zh-Hans">
+<meta property="og:description" content="&amp;ensp;&amp;ensp;&amp;emsp;『纵横江湖三十余载，杀尽仇寇，败尽英雄，天下更无抗手，无可柰何，惟隐居深谷，以雕为友。呜呼，生平求一败而不可得，诚寂寥难堪也。』&amp;ensp;&amp;ensp;&amp;emsp;凌厉刚猛，无坚不摧，弱冠前以之与河朔群雄争锋。紫薇软剑，三十岁前所用，误伤义士不祥，悔恨无已，乃弃之深谷。 重剑无锋，大巧不工。四十岁前恃之横行天下。 四十岁后，不滞于物，草木竹石均可为剑。自此精修，">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-03-08T03:22:41.971Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Newton&#39;s">
-<meta name="twitter:description" content="坚持就是最好的策略">
+<meta name="twitter:title" content="Openstack学习与总结（一）">
+<meta name="twitter:description" content="&amp;ensp;&amp;ensp;&amp;emsp;『纵横江湖三十余载，杀尽仇寇，败尽英雄，天下更无抗手，无可柰何，惟隐居深谷，以雕为友。呜呼，生平求一败而不可得，诚寂寥难堪也。』&amp;ensp;&amp;ensp;&amp;emsp;凌厉刚猛，无坚不摧，弱冠前以之与河朔群雄争锋。紫薇软剑，三十岁前所用，误伤义士不祥，悔恨无已，乃弃之深谷。 重剑无锋，大巧不工。四十岁前恃之横行天下。 四十岁后，不滞于物，草木竹石均可为剑。自此精修，">
 
 
 
@@ -106,7 +108,7 @@
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     duoshuo: {
       userId: '0',
-      author: '博主'
+      author: 'Author'
     },
     algolia: {
       applicationID: '',
@@ -120,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/tags/技术/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/03/08/openstack学习与 总结（一）/"/>
 
 
 
 
 
-  <title>标签: 技术 | Newton's</title>
+  <title>Openstack学习与总结（一） | Newton's</title>
   
 
 
@@ -138,14 +140,14 @@
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
 
   
   
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -186,7 +188,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            首页
+            Startseite
           </a>
         </li>
       
@@ -196,7 +198,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
             
-            关于
+            Über
           </a>
         </li>
       
@@ -206,7 +208,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
             
-            分类
+            Kategorien
           </a>
         </li>
       
@@ -216,7 +218,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            归档
+            Archiv
           </a>
         </li>
       
@@ -239,110 +241,147 @@
           <div id="content" class="content">
             
 
+  <div id="posts" class="posts-expand">
+    
+
+  
+
   
   
   
-  <div class="post-block tag">
-
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>技术<small>标签</small>
-        </h1>
-      </div>
-
-      
-        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/08/openstack学习与 总结（一）/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Newton">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Newton's">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2018/03/08/openstack学习与 总结（一）/" itemprop="url">
-              
-                <span itemprop="name">Openstack学习与总结（一）</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">Openstack学习与总结（一）</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-03-08T11:09:03+08:00"
-              content="2018-03-08" >
-          03-08
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-03-08T11:09:03+08:00">
+                2018-03-08
+              </time>
+            
 
-    </header>
-  </article>
+            
 
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/03/05/云计算概述/" itemprop="url">
-              
-                <span itemprop="name">云计算概述</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-03-05T15:54:22+08:00"
-              content="2018-03-05" >
-          03-05
-        </time>
-      </div>
-
-    </header>
-  </article>
-
+      
 
       
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/02/24/计算机知识体系/" itemprop="url">
-              
-                <span itemprop="name">计算机知识体系</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-02-24T22:49:31+08:00"
-              content="2018-02-24" >
-          02-24
-        </time>
-      </div>
-
-    </header>
-  </article>
-
+        <p>&ensp;&ensp;&emsp;『纵横江湖三十余载，杀尽仇寇，败尽英雄，天下更无抗手，无可柰何，惟隐居深谷，以雕为友。呜呼，生平求一败而不可得，诚寂寥难堪也。』<br>&ensp;&ensp;&emsp;凌厉刚猛，无坚不摧，弱冠前以之与河朔群雄争锋。紫薇软剑，三十岁前所用，误伤义士不祥，悔恨无已，乃弃之深谷。 重剑无锋，大巧不工。四十岁前恃之横行天下。 四十岁后，不滞于物，草木竹石均可为剑。自此精修，渐进于无剑胜有剑之境。</p>
 
       
     </div>
+    
+    
+    
 
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/技术/" rel="tag"># 技术</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/03/05/云计算概述/" rel="next" title="云计算概述">
+                <i class="fa fa-chevron-left"></i> 云计算概述
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -350,6 +389,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -387,7 +430,7 @@
                 <a href="/archives/">
               
                   <span class="site-state-item-count">5</span>
-                  <span class="site-state-item-name">日志</span>
+                  <span class="site-state-item-name">Artikel</span>
                 </a>
               </div>
             
@@ -400,7 +443,7 @@
               <div class="site-state-item site-state-tags">
                 
                   <span class="site-state-item-count">3</span>
-                  <span class="site-state-item-name">标签</span>
+                  <span class="site-state-item-name">Tags</span>
                 
               </div>
             
@@ -453,7 +496,7 @@
 </div>
 
 
-  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Newton</a> 强力驱动</div>
+  <div class="powered-by">Erstellt mit  <a class="theme-link" target="_blank" href="https://hexo.io">Newton</a></div>
 
 
 
@@ -461,7 +504,7 @@
 
 
 
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.1.4</div>
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.1.4</div>
 
 
 
@@ -562,6 +605,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
