@@ -264,7 +264,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/05/云计算概述/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/08/Openstack学习与总结（一）/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Newton">
@@ -283,7 +283,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/03/05/云计算概述/" itemprop="url">云计算概述</a></h1>
+                <a class="post-title-link" href="/2018/03/08/Openstack学习与总结（一）/" itemprop="url">Openstack学习与总结(一)——openstack框架介绍</a></h1>
         
 
         <div class="post-meta">
@@ -295,8 +295,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-05T15:54:22+08:00">
-                2018-03-05
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-08T14:27:29+08:00">
+                2018-03-08
               </time>
             
 
@@ -357,11 +357,7 @@
       
         
           
-            <p>&ensp;&ensp;&emsp;谈及职业发展，我目前尚未对此形成主线；但对于云计算，它很可能成为我职业生涯的起点。故在正式入职之前，提前对云计算做了简单的了解，也算是预热吧！</p>
-<p>&ensp;&ensp;&emsp;如果翻翻计算机技术的发展历史，几乎任何看似新的技术都有与之相对应的概念，只是当时的条件限制了其发展。随着计算能力的增强、存储空间的扩大以及网络带宽的提升，云计算的出现也就水到渠成了。</p>
-<p>&ensp;&ensp;&emsp;云计算一般被定义在网络环境下计算资源的交付和使用方式，用户通过网络按需、易扩展的方式获得所需服务。换言之，即将处于整个互联网的空闲计算资源调度并集中起来，服务于某一台终端计算机，实现终端的处理能力提升。其本质就是服务的交付，也是能力的交付，其基本思想是资源的打散重组、灵活调度。云计算一般的支撑条件包括：1）足够的带宽网络；2）资源“池化”，按需伸缩的弹性机制；3）服务自治；4）后台自适应这种变化；5）按使用量计算成本。</p>
-<p>&ensp;&ensp;&emsp;抽象思维是计算机领域的重要思想，底层被抽象成接口服务提供给上层调用，进而屏蔽掉底层的实现细节，一切资源都可以封装成服务。云计算服务交付模式可分为IaaS基础设施即服务、PaaS平台即服务以及SaaS软件即服务。IaaS是云服务的最底层，主要提供一些诸如计算、存储以及网络的基础设施；PaaS是云服务的中间层，主要提供软件部署平台及运行环境，抽象掉了硬件和操作系统的细节，可以无缝地扩展，用户只需关注自身的业务逻辑，无需关注底层；SaaS是云服务的最上层，它是软件的开发、管理以及部署都交给第三方，不需要关注技术问题，拿来即用。云计算的部署方式包括公有云、私有云、混合云以及社区云等。总而言之，云计算就是将计算资源、存储资源、网络资源以及安全服务抽象成可交付的服务。<br><img src="images/2018中国云计算各层产业生态图谱.png" alt="2018中国云计算各层产业生态图谱"><br>&ensp;&ensp;&emsp;云计算的实现紧紧地依托于虚拟化和分布式计算两项关键技术，虚拟化解决物理资源与用户使用解耦的问题，分布式计算解除用户和大型应用系统之间的绑定关系，两者的本质都是将资源和利用进行解耦，从而提升资源利用的自由度。云计算基础设施方面——云计算数据中心设计与管理及资源虚拟化技术；大规模数据处理方面——海量数据处理平台即其资源管理与调度技术；云计算服务保障方面——服务质量保障和安全与隐私保护技术。<br><img src="images/2018中国云计算产业生态图谱.png" alt="2018中国云计算产业生态图谱"><br>&ensp;&ensp;&emsp;云计算是一个比较庞大的生态系统，包括上游的云服务用户、中游的I-P-S各层云服务平台提供商以及下游的设备及网络提供商，不同行业均在建设属于自己的行业解决方案，即行业云，颠覆传统IT基础设施；整个生态技术类的岗位包括基础架构设计、应用开发、平台开发、平台运维以及安全类的服务保障等：<br><img src="images/云计算知识图谱.jpg" alt="云计算知识图谱"><br>&ensp;&ensp;&emsp;&ensp;&ensp;&emsp;（1）基础架构设计：涉及自动扩展、负载均衡、虚拟化以及容器类的计算服务，涉及DNS/CDN的网络服务，以及网络存储、对象存储、块存储以及灾备恢复的存储服务。<br>&ensp;&ensp;&emsp;&ensp;&ensp;&emsp;（2）应用开发：涉及Web应用、桌面虚拟化、移动应用以及IoT的前端应用，高性能计算和渲染的后端应用，以及类似CRM、ERP和生物科学的行业应用。<br>&ensp;&ensp;&emsp;&ensp;&ensp;&emsp;（3）平台开发：涉及操作系统、数据管理（SQL、缓存、检索、大数据以及机器学习）、身份认证以及包括日志和监控的管理服务。<br>&ensp;&ensp;&emsp;&ensp;&ensp;&emsp;（4）平台运维：涉及包含持续交付和持续集成的DevOps、配置以及部署。</p>
-
+            
           
         
       
@@ -400,7 +396,7 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/5/">5</a><a class="extend next" rel="next" href="/page/3/"><i class="fa fa-angle-right"></i></a>
+    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/6/">6</a><a class="extend next" rel="next" href="/page/3/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
 
@@ -446,7 +442,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -457,7 +453,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -468,7 +464,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
