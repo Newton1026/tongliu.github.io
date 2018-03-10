@@ -81,18 +81,18 @@
 
 
 
-<meta name="description" content="&amp;ensp;&amp;ensp;&amp;emsp;面对新事物，新技术，亦或是新的问题，如何做到深入理解，快速解决，及时消化？首先要克服心理上的恐惧，所谓的新，其实只是换了个说法，本质上的东西依然未变；然后，利用分层抽象的思维来判断其所处的层次，是属于应用层的业务，还是属于底层的通用知识；再次需要进行触类旁通，灵活运用以往的知识来理解、分析该项技术，理解其本质；最后进行比较权衡，用最高效的手段去解决它。 &amp;ens">
+<meta name="description" content="坚持就是最好的策略">
 <meta name="keywords" content="技术">
 <meta property="og:type" content="article">
-<meta property="og:title" content="计算机知识体系">
-<meta property="og:url" content="http://yoursite.com/2018/02/24/计算机知识体系/index.html">
+<meta property="og:title" content="Openstack学习与总结（一）">
+<meta property="og:url" content="http://yoursite.com/2018/03/08/Openstack学习与总结（一）/index.html">
 <meta property="og:site_name" content="Newton&#39;s">
-<meta property="og:description" content="&amp;ensp;&amp;ensp;&amp;emsp;面对新事物，新技术，亦或是新的问题，如何做到深入理解，快速解决，及时消化？首先要克服心理上的恐惧，所谓的新，其实只是换了个说法，本质上的东西依然未变；然后，利用分层抽象的思维来判断其所处的层次，是属于应用层的业务，还是属于底层的通用知识；再次需要进行触类旁通，灵活运用以往的知识来理解、分析该项技术，理解其本质；最后进行比较权衡，用最高效的手段去解决它。 &amp;ens">
+<meta property="og:description" content="坚持就是最好的策略">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-03-04T06:53:41.751Z">
+<meta property="og:updated_time" content="2018-03-08T06:28:47.090Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="计算机知识体系">
-<meta name="twitter:description" content="&amp;ensp;&amp;ensp;&amp;emsp;面对新事物，新技术，亦或是新的问题，如何做到深入理解，快速解决，及时消化？首先要克服心理上的恐惧，所谓的新，其实只是换了个说法，本质上的东西依然未变；然后，利用分层抽象的思维来判断其所处的层次，是属于应用层的业务，还是属于底层的通用知识；再次需要进行触类旁通，灵活运用以往的知识来理解、分析该项技术，理解其本质；最后进行比较权衡，用最高效的手段去解决它。 &amp;ens">
+<meta name="twitter:title" content="Openstack学习与总结（一）">
+<meta name="twitter:description" content="坚持就是最好的策略">
 
 
 
@@ -122,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/02/24/计算机知识体系/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/03/08/Openstack学习与总结（一）/"/>
 
 
 
 
 
-  <title>计算机知识体系 | Newton's</title>
+  <title>Openstack学习与总结（一） | Newton's</title>
   
 
 
@@ -265,7 +265,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/02/24/计算机知识体系/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/08/Openstack学习与总结（一）/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Newton">
@@ -282,7 +282,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">计算机知识体系</h1>
+          <h1 class="post-title" itemprop="name headline">Openstack学习与总结（一）</h1>
         
 
         <div class="post-meta">
@@ -294,8 +294,8 @@
               
                 <span class="post-meta-item-text">Posté le</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-02-24T22:49:31+08:00">
-                2018-02-24
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-03-08T14:27:29+08:00">
+                2018-03-08
               </time>
             
 
@@ -332,10 +332,7 @@
       
 
       
-        <p>&ensp;&ensp;&emsp;面对新事物，新技术，亦或是新的问题，如何做到深入理解，快速解决，及时消化？首先要克服心理上的恐惧，所谓的新，其实只是换了个说法，本质上的东西依然未变；然后，利用分层抽象的思维来判断其所处的层次，是属于应用层的业务，还是属于底层的通用知识；再次需要进行触类旁通，灵活运用以往的知识来理解、分析该项技术，理解其本质；最后进行比较权衡，用最高效的手段去解决它。</p>
-<p>&ensp;&ensp;&emsp;计算机知识可分为三大类别：基础知识、领域知识以及工具化知识。基础知识即程序猿必须要掌握的通识性质的内容；领域知识即程序猿从事的技术方向的知识；工具化知识即程序猿职业生涯中实践所得的一些提高工作效率的碎片化知识。<br>&ensp;&ensp;&emsp;一、基础知识主要是数学+计算机五大件。程序猿工作中大量的内容都是业务相关的，所涉及的数学知识较少，但如果想要得以发展，精研某一方面则需要扎实的数学功底，否则这份工作就有天花板，也就容易被人替换。程序猿用到的数学，总结起来，主要是微积分、线性代数以及概率论三门课程。计算机五大件包括计算机组成原理、数据结构、操作系统、计算机网络以及编译原理，这五大件是从事IT领域所必备的基础知识。此外，掌握若干种编程语言，包括静态/动态、面向过程/面向对象、编译型/解释型。最后是软件工程的内容，如何写出艺术般的代码。<br>&ensp;&ensp;&emsp;二、领域知识。不同的方向需要掌握不同的领域知识。首先需要对该领域在业界的发展情况以及技术全景有所了解，然后是找到该领域存在的问题，最后通过自身的努力去解决问题。最终，使得自己的“T”型知识体系的纵向不断延伸。<br>&ensp;&ensp;&emsp;三、工具化知识。工具化知识即提升工作效率的工具或习惯，这个需要平时的积累和总结。</p>
-<p>&ensp;&ensp;&emsp;如果套用“T”型知识管理体系，可以将基础知识看作是构成“T”型的原材料，领域知识看作是纵向的深度，而工具化知识看作横向的广度。原材料是基础，纵向的深度是支撑，横向的广度可以起到如虎添翼的效果。</p>
-
+        
       
     </div>
     
@@ -365,8 +362,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/02/05/阅读/" rel="next" title="阅读">
-                <i class="fa fa-chevron-left"></i> 阅读
+              <a href="/2018/03/08/目标优化（转载）/" rel="next" title="目标优化">
+                <i class="fa fa-chevron-left"></i> 目标优化
               </a>
             
           </div>
@@ -375,8 +372,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/03/03/浅谈科技论文之写作方法/" rel="prev" title="浅谈科技论文之写作方法">
-                浅谈科技论文之写作方法 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/03/08/卡片知识/" rel="prev" title="">
+                 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
